@@ -2,8 +2,8 @@ name: Deploy Next.js to GitHub Pages
 
 on:
   push:
-    branches: [ main ]     # 배포할 브랜치
-  workflow_dispatch:
+    branches: [ main ]     # main 푸시 시 자동 실행
+  workflow_dispatch:        # Actions 화면에서 "Run workflow" 버튼 노출
 
 permissions:
   contents: read
@@ -56,3 +56,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
