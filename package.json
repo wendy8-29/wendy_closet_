@@ -3,9 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "deploy:local": "next build && next export && touch out/.nojekyll"
+    "build": "next build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.4",
